@@ -4,6 +4,9 @@ runtime: org.gnome.Platform
 runtime-version: '3.34'
 sdk: org.gnome.Sdk
 command: pdfarranger
+rename-icon: pdfarranger
+rename-desktop-file: pdfarranger.desktop
+rename-appdata-file: pdfarranger.appdata.xml
 modules:
 - name: intltool
   cleanup: [ "*" ]
