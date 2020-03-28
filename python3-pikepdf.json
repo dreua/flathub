@@ -1,0 +1,19 @@
+{
+    "name": "python3-pikepdf",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip3 install --no-index --no-build-isolation --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} pikepdf"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/39/2b/0a66d5436f237aff76b91e68b4d8c041d145ad0a2cdeefe2c42f76ba2857/lxml-4.5.0.tar.gz",
+            "sha256": "8620ce80f50d023d414183bf90cc2576c2837b88e00bea3f33ad2630133bbb60"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/25/21/af5ea7403bf4baccbb7e1c8ab9e973d267a2803b3b2200647ef17eb5f1ce/pikepdf-1.10.3.tar.gz",
+            "sha256": "82c3738cf19813b67a0a14a7c97e9234902cbdbd304239b8326a10b91017fe17"
+        }
+    ]
+}

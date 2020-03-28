@@ -1,0 +1,14 @@
+{
+    "name": "python3-setuptools",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} setuptools"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/c6/ca/e912015113aa194a69c0cd4c9e46ff278a0250f35f32ddcf1f096e7c5129/setuptools-46.1.2-py3-none-any.whl",
+            "sha256": "62fd202dea4dd78827a72c0c4eccd364f5faf64d438e2124c288bb3ef61e12de"
+        }
+    ]
+}
