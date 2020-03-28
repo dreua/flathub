@@ -4,12 +4,6 @@ runtime: org.gnome.Platform
 runtime-version: '3.34'
 sdk: org.gnome.Sdk
 command: pdfarranger
-# These renames will be obsolete with 
-# https://github.com/jeromerobert/pdfarranger/issues/158
-# Currently known bug: Missing icon in about dialog (Will be fixed by #158.)
-rename-icon: pdfarranger
-rename-desktop-file: pdfarranger.desktop
-rename-appdata-file: pdfarranger.appdata.xml
 modules:
 - name: intltool
   cleanup: [ "*" ]
@@ -56,9 +50,8 @@ modules:
 - name: pdfarranger
   buildsystem: simple
   sources:
-  - url: https://github.com/jeromerobert/pdfarranger
-    tag: "1.4.2"
-    commit: "b1622c9244b3c1ec005bdd458864bf580c7dcd68"
+  - url: https://github.com/dreua/pdfarranger
+    commit: "4efc49c036738cdfafc3dc7cc7c35b12efa48530" # appid-prefix/Fix icon path
     type: git
   build-commands:
   - pip3 install --prefix=/app .
